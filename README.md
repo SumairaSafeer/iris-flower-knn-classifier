@@ -1,15 +1,15 @@
 # 🌸 Iris Classification using K-Nearest Neighbors (KNN)
 
-> **AI Engineering Internship — Project 2: Data Classification Using AI**
+> **AI Engineering Internship — Project: Data Classification Using AI**
 >
-> A complete, from-scratch supervised learning pipeline that trains, tests, and validates a K-Nearest Neighbors (KNN) classifier on the classic Iris dataset — built to demonstrate the full machine learning workflow: data understanding, preprocessing, model training, hyperparameter tuning, and rigorous evaluation.
+> A complete, from-scratch supervised learning pipeline that trains, tests, and validates a K-Nearest Neighbors (KNN) classifier on the classic Iris dataset, built to demonstrate the full machine learning workflow: data understanding, preprocessing, model training, hyperparameter tuning, and rigorous evaluation.
 
 ---
 
 ## 📌 Overview
 This project moves beyond simple rule-based logic (`if/else` heuristics) into **Supervised Learning**: a machine that learns patterns directly from historical data rather than hardcoded rules.
 
-Using the **Iris flower dataset**, the model learns to classify a flower into one of three species — *Setosa*, *Versicolor*, or *Virginica* — based on four measured features: sepal length, sepal width, petal length, and petal width.
+Using the **Iris flower dataset**, the model learns to classify a flower into one of three species *Setosa*, *Versicolor*, or *Virginica* — based on four measured features: sepal length, sepal width, petal length, and petal width.
 
 ---
 
@@ -19,7 +19,7 @@ Build a basic, reliable classification model that can:
 - Load and understand a real-world dataset.
 - Split data correctly into training and testing sets.
 - Apply a simple, interpretable classification algorithm (KNN).
-- Validate performance using proper evaluation metrics — not just raw accuracy.
+- Validate performance using proper evaluation metrics; not just raw accuracy.
 
 ---
 
@@ -46,8 +46,8 @@ Rather than guessing a value for K, the script tests K = 1 through 20, tracks th
 
 | Property | Value |
 |---|---|
-| Samples | 150 (perfectly balanced — 50 per class) |
-| Features | 4 (sepal length, sepal width, petal length, petal width — all in cm) |
+| Samples | 150 (perfectly balanced 50 per class) |
+| Features | 4 (sepal length, sepal width, petal length, petal width (all in cm)) |
 | Classes | 3 (Setosa, Versicolor, Virginica) |
 | Missing values | None |
 
@@ -55,10 +55,10 @@ Rather than guessing a value for K, the script tests K = 1 through 20, tracks th
 
 ## 🛠️ Tech Stack
 - **Python 3.8+**
-- [scikit-learn](https://scikit-learn.org/) — model, scaling, metrics, dataset
-- [pandas](https://pandas.pydata.org/) — data handling
-- [numpy](https://numpy.org/) — numerical operations
-- [matplotlib](https://matplotlib.org/) & [seaborn](https://seaborn.pydata.org/) — visualization
+- [scikit-learn](https://scikit-learn.org/)  model, scaling, metrics, dataset
+- [pandas](https://pandas.pydata.org/)  data handling
+- [numpy](https://numpy.org/) numerical operations
+- [matplotlib](https://matplotlib.org/) & [seaborn](https://seaborn.pydata.org/) visualization
 
 ---
 
