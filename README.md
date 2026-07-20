@@ -44,7 +44,6 @@ Rather than guessing a value for K, the script tests K = 1 through 20, tracks th
 
 ## 📊 Dataset
 **Source:** Built into `scikit-learn` (`sklearn.datasets.load_iris`) — no download required.
-
 | Property | Value |
 |---|---|
 | Samples | 150 (perfectly balanced — 50 per class). |
