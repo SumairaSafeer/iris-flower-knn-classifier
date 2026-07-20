@@ -8,7 +8,7 @@ A complete, from-scratch supervised learning pipeline that trains, tests, and va
 ## 📌 Overview
 This project moves beyond simple rule-based logic (`if/else` heuristics) into **Supervised Learning**: a machine that learns patterns directly from historical data rather than hardcoded rules.
 
-Using the **Iris flower dataset**, the model learns to classify a flower into one of three species *Setosa*, *Versicolor*, or *Virginica* — based on four measured features: sepal length, sepal width, petal length, and petal width.
+Using the **Iris flower dataset**, the model learns to classify a flower into one of three species *Setosa*, *Versicolor*, or *Virginica* based on four measured features: sepal length, sepal width, petal length, and petal width.
 ```
 
 ---
@@ -59,19 +59,6 @@ Rather than guessing a value for K, the script tests K = 1 through 20, tracks th
 - [pandas](https://pandas.pydata.org/) — data handling.
 - [numpy](https://numpy.org/) — numerical operations.
 - [matplotlib](https://matplotlib.org/) & [seaborn](https://seaborn.pydata.org/) — visualization
-
----
-
-## 📂 Project Structure
-```
-iris-classification-knn/
-│
-├── project2_iris_classification.py   # Main pipeline script
-├── requirements.txt                   # Python dependencies
-├── README.md                          # Project documentation
-├── confusion_matrix.png               # Generated on run
-└── k_tuning_curve.png                 # Generated on run
-```
 
 ---
 
