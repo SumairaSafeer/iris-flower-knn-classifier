@@ -8,10 +8,7 @@ A complete, from-scratch supervised learning pipeline that trains, tests, and va
 ## 📌 Overview
 This project moves beyond simple rule-based logic (`if/else` heuristics) into **Supervised Learning**: a machine that learns patterns directly from historical data rather than hardcoded rules.
 
-Using the **Iris flower dataset**, the model learns to classify a flower into one of three species — *Setosa*, *Versicolor*, or *Virginica* — based on four measured features: sepal length, sepal width, petal length, and petal width.
-
-```
-We do not write the rules. We provide history, and the machine derives the logic.
+Using the **Iris flower dataset**, the model learns to classify a flower into one of three species *Setosa*, *Versicolor*, or *Virginica* — based on four measured features: sepal length, sepal width, petal length, and petal width.
 ```
 
 ---
@@ -40,7 +37,7 @@ KNN is a **distance-based** algorithm. Without scaling, features with larger num
 On imbalanced data, a model can score 99% accuracy while still being useless (the "Accuracy Mirage"). This project reports the full **Confusion Matrix** and **F1 Score** (the harmonic mean of Precision and Recall) to give an honest picture of model performance per class.
 
 ### Choosing K
-Rather than guessing a value for K, the script tests K = 1 through 20, tracks the error rate for each, and automatically selects the K value at the "elbow" — the point of lowest error before the model starts underfitting.
+Rather than guessing a value for K, the script tests K = 1 through 20, tracks the error rate for each, and automatically selects the K value at the "elbow" the point of lowest error before the model starts underfitting.
 
 ---
 
@@ -50,7 +47,7 @@ Rather than guessing a value for K, the script tests K = 1 through 20, tracks th
 | Property | Value |
 |---|---|
 | Samples | 150 (perfectly balanced — 50 per class). |
-| Features | 4 (sepal length, sepal width, petal length, petal width — all in cm). |
+| Features | 4 (sepal length, sepal width, petal length, petal width all in cm). |
 | Classes | 3 (Setosa, Versicolor, Virginica). |
 | Missing values | None |
 
