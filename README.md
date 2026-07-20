@@ -1,16 +1,15 @@
 # 🌸 Iris Classification using K-Nearest Neighbors (KNN)
 
-> **AI Engineering Internship — Project 2: Data Classification Using AI**.
-> 
-A complete, from-scratch supervised learning pipeline that trains, tests, and validates a K-Nearest Neighbors (KNN) classifier on the classic Iris dataset built to demonstrate the full machine learning workflow: data understanding, preprocessing, model training, hyperparameter tuning, and rigorous evaluation.
+> **AI Engineering Internship — Project 2: Data Classification Using AI**
+>
+> A complete, from-scratch supervised learning pipeline that trains, tests, and validates a K-Nearest Neighbors (KNN) classifier on the classic Iris dataset — built to demonstrate the full machine learning workflow: data understanding, preprocessing, model training, hyperparameter tuning, and rigorous evaluation.
 
 ---
 
 ## 📌 Overview
 This project moves beyond simple rule-based logic (`if/else` heuristics) into **Supervised Learning**: a machine that learns patterns directly from historical data rather than hardcoded rules.
 
-Using the **Iris flower dataset**, the model learns to classify a flower into one of three species *Setosa*, *Versicolor*, or *Virginica* based on four measured features: sepal length, sepal width, petal length, and petal width.
-```
+Using the **Iris flower dataset**, the model learns to classify a flower into one of three species — *Setosa*, *Versicolor*, or *Virginica* — based on four measured features: sepal length, sepal width, petal length, and petal width.
 
 ---
 
@@ -38,17 +37,18 @@ KNN is a **distance-based** algorithm. Without scaling, features with larger num
 On imbalanced data, a model can score 99% accuracy while still being useless (the "Accuracy Mirage"). This project reports the full **Confusion Matrix** and **F1 Score** (the harmonic mean of Precision and Recall) to give an honest picture of model performance per class.
 
 ### Choosing K
-Rather than guessing a value for K, the script tests K = 1 through 20, tracks the error rate for each, and automatically selects the K value at the "elbow" the point of lowest error before the model starts underfitting.
+Rather than guessing a value for K, the script tests K = 1 through 20, tracks the error rate for each, and automatically selects the K value at the "elbow" — the point of lowest error before the model starts underfitting.
 
 ---
 
 ## 📊 Dataset
 **Source:** Built into `scikit-learn` (`sklearn.datasets.load_iris`) — no download required.
+
 | Property | Value |
 |---|---|
-| Samples | 150 (perfectly balanced — 50 per class). |
-| Features | 4 (sepal length, sepal width, petal length, petal width all in cm). |
-| Classes | 3 (Setosa, Versicolor, Virginica). |
+| Samples | 150 (perfectly balanced — 50 per class) |
+| Features | 4 (sepal length, sepal width, petal length, petal width — all in cm) |
+| Classes | 3 (Setosa, Versicolor, Virginica) |
 | Missing values | None |
 
 ---
@@ -56,8 +56,8 @@ Rather than guessing a value for K, the script tests K = 1 through 20, tracks th
 ## 🛠️ Tech Stack
 - **Python 3.8+**
 - [scikit-learn](https://scikit-learn.org/) — model, scaling, metrics, dataset
-- [pandas](https://pandas.pydata.org/) — data handling.
-- [numpy](https://numpy.org/) — numerical operations.
+- [pandas](https://pandas.pydata.org/) — data handling
+- [numpy](https://numpy.org/) — numerical operations
 - [matplotlib](https://matplotlib.org/) & [seaborn](https://seaborn.pydata.org/) — visualization
 
 ---
@@ -134,8 +134,7 @@ Built as part of the **DecodeLabs Industrial Training Kit — Batch 2026**.
 📧 decodelabs.tech@gmail.com
 🌐 [www.decodelabs.tech](https://www.decodelabs.tech)
 
-
-## Author:
+## Author
 **Sumaira Safeer**
 **Computer Engineer**
 
