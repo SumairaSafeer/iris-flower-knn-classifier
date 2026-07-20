@@ -1,12 +1,12 @@
 # 🌸 Iris Classification using K-Nearest Neighbors (KNN)
 
 > **DecodeLabs AI Engineering Internship — Project 2: Data Classification Using AI**.
-A complete, from-scratch supervised learning pipeline that trains, tests, and validates a K-Nearest Neighbors (KNN) classifier on the classic Iris dataset — built to demonstrate the full machine learning workflow: data understanding, preprocessing, model training, hyperparameter tuning, and rigorous evaluation.
+A complete, from-scratch supervised learning pipeline that trains, tests, and validates a K-Nearest Neighbors (KNN) classifier on the classic Iris dataset built to demonstrate the full machine learning workflow: data understanding, preprocessing, model training, hyperparameter tuning, and rigorous evaluation.
 
 ---
 
 ## 📌 Overview
-This project moves beyond simple rule-based logic (`if/else` heuristics) into **Supervised Learning** — a machine that learns patterns directly from historical data rather than hardcoded rules.
+This project moves beyond simple rule-based logic (`if/else` heuristics) into **Supervised Learning**: a machine that learns patterns directly from historical data rather than hardcoded rules.
 
 Using the **Iris flower dataset**, the model learns to classify a flower into one of three species — *Setosa*, *Versicolor*, or *Virginica* — based on four measured features: sepal length, sepal width, petal length, and petal width.
 
