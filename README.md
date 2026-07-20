@@ -23,7 +23,7 @@ Build a basic, reliable classification model that can:
 
 ---
 
-## 🧠 Methodology — The IPO Framework
+## 🧠 Methodology: The IPO Framework
 | Stage | What Happens |
 |---|---|
 | **Input** | Load the Iris dataset → inspect it → scale features with `StandardScaler`. |
@@ -114,7 +114,7 @@ The script will print each pipeline stage to the console and save two plots (`k_
 
 ## 🔍 Key Learnings
 - End-to-end supervised learning workflow using `scikit-learn`.
-- Correct data preprocessing order (fit scaler on train data only — avoiding data leakage).
+- Correct data preprocessing order (fit scaler on train data only, avoiding data leakage).
 - Hyperparameter tuning through empirical error-rate analysis.
 - Model evaluation beyond raw accuracy using Confusion Matrix and F1 Score.
 
