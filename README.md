@@ -1,6 +1,7 @@
 # 🌸 Iris Classification using K-Nearest Neighbors (KNN)
 
-> **DecodeLabs AI Engineering Internship — Project 2: Data Classification Using AI**.
+> **AI Engineering Internship — Project 2: Data Classification Using AI**.
+> 
 A complete, from-scratch supervised learning pipeline that trains, tests, and validates a K-Nearest Neighbors (KNN) classifier on the classic Iris dataset built to demonstrate the full machine learning workflow: data understanding, preprocessing, model training, hyperparameter tuning, and rigorous evaluation.
 
 ---
