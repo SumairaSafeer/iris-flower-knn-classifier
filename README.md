@@ -1,144 +1,157 @@
-# 🌸 Iris Classification using K-Nearest Neighbors (KNN)
+# Iris Classification using K-Nearest Neighbors (KNN)
 
-> **AI Engineering Internship — Project: Data Classification Using AI**
+> **AI Engineering Internship: Project: Data Classification Using AI**
 >
-> A complete, from-scratch supervised learning pipeline that trains, tests, and validates a K-Nearest Neighbors (KNN) classifier on the classic Iris dataset, built to demonstrate the full machine learning workflow: data understanding, preprocessing, model training, hyperparameter tuning, and rigorous evaluation.
+> A complete, from-scratch supervised learning pipeline that trains, tests, and validates a K-Nearest Neighbors (KNN) classifier on the classic Iris dataset. Built to demonstrate the full machine learning workflow: data understanding, preprocessing, model training, hyperparameter tuning, and rigorous evaluation.
 
 ---
 
-## 📌 Overview
-This project moves beyond simple rule-based logic (`if/else` heuristics) into **Supervised Learning**: a machine that learns patterns directly from historical data rather than hardcoded rules.
+## Overview
+This project moves beyond simple rule-based logic (if/else heuristics) into **Supervised Learning**: a machine that learns patterns directly from historical data rather than hardcoded rules.
 
-Using the **Iris flower dataset**, the model learns to classify a flower into one of three species *Setosa*, *Versicolor*, or *Virginica* — based on four measured features: sepal length, sepal width, petal length, and petal width.
+Using the **Iris flower dataset**, the model learns to classify a flower into one of three species — *Setosa*, *Versicolor*, or *Virginica* — based on four measured features: sepal length, sepal width, petal length, and petal width.
 
 ---
 
-## 🎯 Objective
-
+## Objective
 Build a basic, reliable classification model that can:
 - Load and understand a real-world dataset.
 - Split data correctly into training and testing sets.
 - Apply a simple, interpretable classification algorithm (KNN).
-- Validate performance using proper evaluation metrics; not just raw accuracy.
+- Validate performance using proper evaluation metrics, not just raw accuracy.
 
 ---
 
-## 🧠 Methodology: The IPO Framework
+## Methodology: The IPO Framework
+
 | Stage | What Happens |
 |---|---|
-| **Input** | Load the Iris dataset → inspect it → scale features with `StandardScaler`. |
-| **Process** | Split into train/test sets → tune K → train the KNN model. |
-| **Output** | Generate a Confusion Matrix → calculate F1 Score → validate results. |
+| **Input** | Load the Iris dataset, inspect it, and scale features with `StandardScaler`. |
+| **Process** | Split into train and test sets, tune K, and train the KNN model. |
+| **Output** | Generate a Confusion Matrix, calculate F1 Score, and validate results |
 
 ### Why Feature Scaling?
-KNN is a **distance-based** algorithm. Without scaling, features with larger numeric ranges (like petal length in cm) would dominate the distance calculation over smaller-range features. `StandardScaler` normalizes every feature to **mean = 0, variance = 1**, ensuring a fair comparison.
+KNN is a **distance-based** algorithm. Without scaling, features with larger numeric ranges (such as petal length in cm) would dominate the distance calculation over smaller-range features. `StandardScaler` normalizes every feature to a mean of 0 and a variance of 1, ensuring a fair comparison.
 
 ### Why Not Just Trust Accuracy?
-On imbalanced data, a model can score 99% accuracy while still being useless (the "Accuracy Mirage"). This project reports the full **Confusion Matrix** and **F1 Score** (the harmonic mean of Precision and Recall) to give an honest picture of model performance per class.
+On imbalanced data, a model can score 99% accuracy while still being useless — the "accuracy mirage." This project reports the full **Confusion Matrix** and **F1 Score** (the harmonic mean of Precision and Recall) to give an honest picture of model performance per class.
 
 ### Choosing K
 Rather than guessing a value for K, the script tests K = 1 through 20, tracks the error rate for each, and automatically selects the K value at the "elbow" — the point of lowest error before the model starts underfitting.
 
 ---
 
-## 📊 Dataset
-**Source:** Built into `scikit-learn` (`sklearn.datasets.load_iris`) — no download required.
+## Dataset
+
+**Source:** Built into scikit-learn (`sklearn.datasets.load_iris`) no download required.
 
 | Property | Value |
 |---|---|
-| Samples | 150 (perfectly balanced 50 per class) |
-| Features | 4 (sepal length, sepal width, petal length, petal width (all in cm)) |
+| Samples | 150 (perfectly balanced, 50 per class) |
+| Features | 4 (sepal length, sepal width, petal length, petal width, all in cm) |
 | Classes | 3 (Setosa, Versicolor, Virginica) |
-| Missing values | None |
+| Missing Values | None |
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Python 3.8+**
-- [scikit-learn](https://scikit-learn.org/)  model, scaling, metrics, dataset
-- [pandas](https://pandas.pydata.org/)  data handling
-- [numpy](https://numpy.org/) numerical operations
-- [matplotlib](https://matplotlib.org/) & [seaborn](https://seaborn.pydata.org/) visualization
+- [scikit-learn](https://scikit-learn.org/) — model, scaling, metrics, dataset
+- [pandas](https://pandas.pydata.org/) — data handling
+- [numpy](https://numpy.org/) — numerical operations
+- [matplotlib](https://matplotlib.org/) and [seaborn](https://seaborn.pydata.org/) — visualization
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 ### Prerequisites
+
 - Python 3.8 or higher
 - pip
 
 ### Installation
 1. Clone the repository
+
    ```bash
    git clone https://github.com/<your-username>/iris-classification-knn.git
    cd iris-classification-knn
    ```
 
 2. (Optional but recommended) Create a virtual environment
+
    ```bash
    python -m venv venv
    source venv/bin/activate      # On Windows: venv\Scripts\activate
    ```
 
 3. Install dependencies
+
    ```bash
    pip install -r requirements.txt
    ```
 
 ### Usage
 Run the full pipeline:
+
 ```bash
-python project2_iris_classification.py
+python project2-iris-classification.py
 ```
 
-The script will print each pipeline stage to the console and save two plots (`k_tuning_curve.png` and `confusion_matrix.png`) to the project directory.
+The script prints each pipeline stage to the console and saves two plots — `k-tuning-curve.png` and `confusion-matrix.png` — to the project directory.
 
 ---
 
-## 📈 Results
+## Results
 | Metric | Score |
 |---|---|
-| **Optimal K** | Auto-selected via elbow method |
-| **Accuracy** | ~96–97% |
-| **F1 Score (weighted)** | ~0.97 |
+| **Optimal K** | Auto-selected via the elbow method |
+| **Accuracy** | Approximately 96–97% |
+| **F1 Score (weighted)** | Approximately 0.97 |
 
 **Confusion Matrix:**
-![Confusion Matrix](confusion_matrix.png)
+![Confusion Matrix](confusion-matrix.png)
 
 **K-Value Tuning Curve:**
-![K Tuning Curve](k_tuning_curve.png)
+![K Tuning Curve](k-tuning-curve.png)
 
-> Exact numbers may vary slightly depending on the `random_state` seed and K search range.
+> Exact numbers may vary slightly depending on the random seed and the K search range.
 
 ---
 
-## 🔍 Key Learnings
-- End-to-end supervised learning workflow using `scikit-learn`.
-- Correct data preprocessing order (fit scaler on train data only, avoiding data leakage).
+## Key Learnings
+- End-to-end supervised learning workflow using scikit-learn.
+- Correct data preprocessing order (fitting the scaler on training data only, avoiding data leakage).
 - Hyperparameter tuning through empirical error-rate analysis.
-- Model evaluation beyond raw accuracy using Confusion Matrix and F1 Score.
+- Model evaluation beyond raw accuracy, using the Confusion Matrix and F1 Score.
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 - [ ] Compare KNN against other algorithms (Logistic Regression, Decision Tree, SVM).
 - [ ] Add k-fold cross-validation instead of a single train-test split.
-- [ ] Deploy as a simple web app (Streamlit/Flask) for interactive predictions.
-- [ ] Extend pipeline to a custom, real-world dataset.
+- [ ] Deploy as a simple web app (Streamlit or Flask) for interactive predictions.
+- [ ] Extend the pipeline to a custom, real-world dataset.
 
 ---
 
-## 🏢 About
+## About
 Built as part of the **DecodeLabs Industrial Training Kit — Batch 2026**.
 
-📧 decodelabs.tech@gmail.com
-🌐 [www.decodelabs.tech](https://www.decodelabs.tech)
-
-## Author
-**Sumaira Safeer**
-**Computer Engineer**
+Email: decodelabs.tech@gmail.com
+Website: [www.decodelabs.tech](https://www.decodelabs.tech)
 
 ---
 
-## 📄 License
+## Author
+
+**Sumaira Safeer**
+Computer Engineer
+
+LinkedIn: [linkedin.com/in/sumaira-safeer-948804418](https://www.linkedin.com/in/sumaira-safeer-948804418/)
+GitHub: [github.com/SumairaSafeer](https://github.com/SumairaSafeer)
+
+---
+
+## License
+
 This project is open source and available under the [MIT License](LICENSE).
