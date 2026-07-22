@@ -9,7 +9,7 @@
 ## Overview
 This project moves beyond simple rule-based logic (if/else heuristics) into **Supervised Learning**: a machine that learns patterns directly from historical data rather than hardcoded rules.
 
-Using the **Iris flower dataset**, the model learns to classify a flower into one of three species — *Setosa*, *Versicolor*, or *Virginica* — based on four measured features: sepal length, sepal width, petal length, and petal width.
+Using the **Iris flower dataset**, the model learns to classify a flower into one of three species  *Setosa*, *Versicolor*, or *Virginica* based on four measured features: sepal length, sepal width, petal length, and petal width.
 
 ---
 
